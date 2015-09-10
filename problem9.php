@@ -35,7 +35,7 @@ for ($i = 1; $i < 1000; $i++) {
 					$product  = $i * $n * $c;
 					
 					echo 'Product is ' . $product;
-					
+					echo 'If only my brain could work this fast!';
 				  exit;	
     
     
