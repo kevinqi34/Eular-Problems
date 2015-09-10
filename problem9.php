@@ -4,19 +4,19 @@
 
 echo 'LIST OF PYTHAGOREAN TRIPLES WITHIN BOUNDS';
 
-
+//specify the bounds for first side
 for ($i = 1; $i < 1000; $i++) {
         $a = $i * $i;
   
-  // echo $a .'<br>'; 
+ 
   
   
-  
+  //specify the bounds for second side
   for ($n = $i + 1;$n < 1000;$n++) {
       
      $b = $n * $n;
       
-      //  echo $a + $b . '<br>';
+     //find the third side
       
      $c = sqrt($a + $b);
      
@@ -25,15 +25,15 @@ for ($i = 1; $i < 1000; $i++) {
       if (strpos($c,'.') == false) {
       	
     		
+    		//for easy readability display on html page
     		
-    		
-    	//	echo ' <' . $i . ',' . $n . ',' . $c . '> ,';
+    		echo '<' . $i . ',' . $n . ',' . $c . '><br>';
     		
     	
     	
 				if (($i + $n + $c) == 1000 ) {
 					
-				 echo ' Result::: <' . $i . ',' . $n . ',' . $c . '> ,';
+				 echo ' Result::: <' . $i . ',' . $n . ',' . $c . '><br>';
 					
 					
 					$product  = $i * $n * $c;
