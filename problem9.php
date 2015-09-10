@@ -1,9 +1,6 @@
 <?php 
 
-
-
-echo 'LIST OF PYTHAGOREAN TRIPLES WITHIN BOUNDS';
-
+echo 'LIST OF PYTHAGOREAN TRIPLES WITHIN BOUNDS<br>';
 //specify the bounds for first side
 for ($i = 1; $i < 1000; $i++) {
         $a = $i * $i;
@@ -21,7 +18,6 @@ for ($i = 1; $i < 1000; $i++) {
      $c = sqrt($a + $b);
      
      
-
       if (strpos($c,'.') == false) {
       	
     		
@@ -40,53 +36,16 @@ for ($i = 1; $i < 1000; $i++) {
 					
 					echo 'Product is ' . $product;
 					
-					
+				  exit;	
+    
+    
 					
 					}    	
-    	
-    	
-    	
-    	
-    	
-    	
-    		
-    		
-    		
-    		
-    		
+
     		
 		}
-      
-    
-  
-  
- 
-  
-  
-  
-  
-  
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
-
-
-
-
-
-
-
+}
 
 ?>
